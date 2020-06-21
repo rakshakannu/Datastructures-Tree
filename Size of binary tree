@@ -9,3 +9,6 @@ void getsize(node root)
   else
     return (1 + getsize(root.left) + getsize(root.right)); // that one is to add the root node
 }
+
+time complexity: O(n)
+space complexity: O(h), where h = height of binary tree [O(h+1)]
