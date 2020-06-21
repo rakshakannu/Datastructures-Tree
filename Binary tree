@@ -1,0 +1,30 @@
+// every node has atmost 2 children
+// degree is atmost 2. 0, 1 or 2 children
+// every node has three things: data, left, right reference
+// if there is no child then the reference becomes null
+
+// most popular is binary search tree which is variation of binary tree
+
+class node{
+  int key;
+  node left; // initialsied as null as default in java
+  node right;
+  node(int k)
+  {
+    key = k;
+  }
+}
+
+class test{
+  public static void main(String args[])
+  {
+    node root = new node(10);
+    root.left = new node(20);
+    root.right = new node(30);
+    root.left.left = new node(40);
+  }
+}
+
+// to create an empty tree
+
+node root = null;
