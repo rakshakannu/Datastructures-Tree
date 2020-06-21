@@ -1,0 +1,38 @@
+// printing the values in the nodes from top level to bottom level
+
+// naive solution
+// first find the height of binary tree
+// define a function that prints all the nodes at a distance k from it
+// call this function for k=1,2,3,4.. till h
+// time = O(n+h*n)
+
+// efficient solution
+// time - O(n)
+// using queue data structure
+// enqueue each level of the tree consecutively 
+
+void printlevel(node root)
+{
+  if(root==null)
+    return;
+    
+  Queue<node> q = new Queue<node>();
+  q.add(root);
+  while(q.isEmpty()==false)
+  {
+    node curr = q.poll();
+    if(curr.left!=null)
+      q.add(curr.left);
+    if(curr.right!=null)
+      q.add(curr.right);
+  }
+}
+
+time complexity - theta(n)
+space complexity - O(n), sometimes it will be constant, sometime O(n)
+
+INTERESTING FACTOR: one level atmost at a time, so space = width of binary tree
+skewed tree - theta(1)
+perfect binary tree - theta(n)
+
+more precise space complexity = theta(w) , where w = width of binary tree.
