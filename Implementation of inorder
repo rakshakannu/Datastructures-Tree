@@ -1,0 +1,12 @@
+void inorder(node root){
+  if(root!=null)
+  {
+    inorder(root.left);
+    System.out.print(root.key);
+    inorder(root.right);
+  }
+}
+
+time complexity: O(n)
+
+Auxillaty space: height of binary tree, O(h+1)->O(h)
