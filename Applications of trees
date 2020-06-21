@@ -1,0 +1,22 @@
+// to reprent hierarchy 
+-- organisation ( a company )
+-- folder structure ( in OS )
+-- XML and HTML content reading from a webpage ( nesting of tags ) ( Json objects )
+-- in OOP (inheritance )
+
+// binary search tree
+
+// binary heap (priority queue)
+
+// B and B+ trees in DBMS
+
+// Spanning and shortest path trees in computer networks
+
+// Parse tree and expression tree in compilers
+
+Types of trees-
+
+-tries (dictionary, prefix search )
+-suffix tree ( fast searching )
+-binary index tree (range query searches)
+-segment tree (range query searches)
