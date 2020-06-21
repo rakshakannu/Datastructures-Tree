@@ -1,0 +1,13 @@
+void postorder( node head )
+{
+  if(root!=null)
+  {
+    postorder(root.left);
+    postorder(root.right);
+    System.out.print(root.key + " "); // key is the data present in the node
+  }
+}
+
+time complexity: O(n)
+
+space complexity: O(h) where h is the hight of the binary tree
