@@ -7,3 +7,7 @@ void preorder(node root)
     preorder(root.right);
   }
 }
+
+time complexity: O(n)
+
+space complexity: O(h+1) -> O(h)
