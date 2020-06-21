@@ -1,0 +1,22 @@
+// traversal means printing every node value exactly once
+// very important to learn tree traversal
+
+// types
+
+1. breadth first ( or level order )
+
+just traversing from top to bottom considering every level
+
+2. depth first
+
+--inorder ( left root right )
+--preorder ( root left right )
+--postorder ( left right root )
+
+// using recursion,
+-- traverse root
+-- traverse left subtree
+-- traverse right subtree
+
+doing these three tasks have 3! permutations in which three of them are very famous. In all of those 3 traversals remember that left 
+subtree is visited first and then right subtree.
