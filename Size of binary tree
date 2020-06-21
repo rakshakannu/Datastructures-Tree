@@ -1,0 +1,11 @@
+// given a binary tree, we need to count the nodes in it
+
+// solution using recursion
+
+void getsize(node root)
+{
+  if(root=null)
+    return 0;
+  else
+    return (1 + getsize(root.left) + getsize(root.right)); // that one is to add the root node
+}
