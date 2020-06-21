@@ -1,0 +1,9 @@
+void preorder(node root)
+{
+  if(root!=null)
+  {
+    System.out.print(root.key + " ");
+    preorder(root.left);
+    preorder(root.right);
+  }
+}
