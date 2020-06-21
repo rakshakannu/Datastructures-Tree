@@ -1,0 +1,16 @@
+// this data structure is for representing hierarchy 
+// words to remember -
+--node
+--root
+--leaf
+--child
+--parent
+--subtree
+--descendants 
+--ancestors 
+--degree
+--internal nodes
+
+// Tree is recursive in nature, because a tree has many trees inside of it
+
+// nodes with degree 0 are leaf nodes
