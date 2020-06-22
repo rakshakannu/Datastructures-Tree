@@ -1,0 +1,21 @@
+// find the maximum node data in the binary tree
+// if input is null, return -infinite
+// works well for perfect binary trees
+
+int getMax(node root)
+{
+  if (root==null)
+    return Integer.MIN_VALUE;  // returns -infinite
+    
+  else
+    return Math.max(root.key; Math.max(getMax(root.left), getMax(root.right)));   
+}
+
+time: O(n)
+space: O(h). h = hight of binary tree
+
+// queue based solution
+// prefered for skewed binary tree
+
+time: O(n)
+space: (w), w = width of binary tree
