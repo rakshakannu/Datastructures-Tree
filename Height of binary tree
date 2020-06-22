@@ -1,0 +1,18 @@
+// maximum number of nodes from root to leaf path
+empty tree - height=0
+only root node - height=1
+
+// we can also define height of binary tree using edges. 
+empty tree - height= -1
+only root node - height=0
+
+void height(node root)
+{
+  if(root==null)
+    return 0;
+  else
+    return Math.max(height(root.left), height(root.right))+1;
+}
+
+time: O(n)
+space: O(h)
