@@ -1,0 +1,21 @@
+// given a binary tree and an integer K, we need to print all nodes at distance K from root
+// basically print (k+1)th level of binary tree
+// if K=0, then print root of binary tree
+// we need to print something, so return type will be void
+
+void printKDist( node root, int k)
+{
+  if(root==null)
+    return;
+  
+  if(k==0)
+    System.out.print( root.key+ " ")
+  else
+  {
+    printKDist(root.left, k-1);
+    printKDIst(root.right, k-1);
+  }
+}
+
+time: O(n)
+space: theta(h), height of binary tree at worst case, so O(h).
