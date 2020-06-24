@@ -1,0 +1,9 @@
+// at every level of binary tree, we need to print the left most node
+
+// method 1
+// using the concept of pre order traversal
+// two extra variables maintained; maxlevel, level
+// maxlevel- max level visited so far, initially =0
+// level - current level, initially =1
+
+( didnt understand much )
