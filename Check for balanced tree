@@ -1,2 +1,23 @@
 // In a Balanced Binary Tree for every node, the difference between heights of left subtree and right subtree should not be more than one. should be true for every node.
+// remember that return type will be int
 
+time: O(n)
+
+int isBalanced( node root)
+{
+  if(root=null)
+    return 0;
+  
+  int lh = isBalanced(root.left); // check for left subtree and also get the left height
+  if(lh==-1)
+    return -1;
+  
+  int rh = isBalanced(root.right); // check for the right subtree and also get the right height
+  if(rh==-1)
+    return -1;
+    
+  if(Math.abs(lh - rh)>1)
+    return -1;
+  else
+    return Math.max(lh,rh) + 1;
+}
